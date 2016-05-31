@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app11.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/reyes2.jpg','imagenes/villa2.jpg','imagenes/atlixco2.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="b">
+<h1>Atlixco Turismo</h1>
+</div>
+<div data-role="main" class="ui-content">
+</div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/wowslider.html" style="width:640px;height:172px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+<div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Lugares de interes</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Eventos</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Museos</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Gastronomia</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Atlixco pueblo magico</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Ubicacion</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Sitio oficial de turismo de Atlixco</h2>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Informacion del autor</h1>
+<div>
+<p>Informacion del autor</p>
+<br>
+</div>
+<div>
+<p><b>Mijael Flores Cerezo</b></p>
+<p><b>4"G"</b></p>
+<p><b>Desarrolla Aplicaciones Moviles</b></p>
+<p><b>Programacion</b></p>
+<p><b>CBTis 16</b></p>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+  <h4>Turismo Atlixco</h4>
+  </div>
+  </div>
+  </div>
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Lugares de interes</h1>
+ 
+  </div>
+  <div data-role="content">
+  <div>
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Cerro de San Miguel</h1>
+<div>
+<center><img src="imagenes/cerro1.jpg" width="245" height="245" > </center>
+</div>
+<p>Si tienes ánimo aventurero te invitamos a subir al Cerro de San Miguel para que eches un vistazo de la ciudad desde sus miradores y si todavía te quedan un poco de fuerzas, que subas la escalinata hasta la Ermita dedicada al Arcángel San Miguel, que cuenta la historia, encerró al diablito que hacía de las suyas en los solares dentro del pozo que se encuentra ahí. Al descender de la cima puedes visitar el Ex Convento Franciscano y disfruta de esta Iglesia tipo fuerte, única en el Estado; además de su bello retablo restaurado por la Asociación “Adopte Una Obra de Arte” y podrás admirar la hermosa vista del poniente de la ciudad desde su atrio. Muchas parejas escogen esta bella Iglesia para su boda</p>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Calle de las Flores.</h1>
+<div>
+<center><img src="imagenes/calle.jpg" width="260" height="231" > </center>
+</div>
+Sobre la Avenida Hidalgo se encuentra esta emblemática calle denominada la Calle de las Flores, donde podrás apreciar sus renovadas fachadas adornadas con flores del municipio. Durante el recorrido podrás apreciar las casonas que fueron reconstruidas, hasta llegar a la Escalera Ancha lugar donde se realizaba el Huey Atlixcayotl y ahora tras su remodelación encontraras un reloj gigante hecho a base de flores.
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Ex Convento Franciscano</h1>
+<div>
+<center><img src="imagenes/convento.jpg" width="208" height="270" > </center></div>
+<p>Anímate a caminar 5 minutos desde el zócalo de la ciudad y disfruta de esta iglesia tipo fuerte, única en el Estado, además de su bello retablo restaurado por la Asociación “Adopte una Obra de Arte” y podrás admirar la hermosa vista del poniente de la ciudad desde su atrio. ¡Muchas parejas escogen esta bella iglesia para su boda!</p>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Murales de Palacio Municipal</h1>
+<div>
+<center><img src="imagenes/murales.jpg" width="268" height="189" > </center></div>
+<p>En el interior de Palacio Municipal así como en la planta baja del exterior (Ex Biblioteca), disfruta los murales de la Fundación de Atlixco, la Historia de la Educación en México o los Héroes de la Independencia y Reforma con diferentes estilos pictóricos, así como la vida obrera y textil que marco una época de grandeza en Atlixco, hasta los acontecimientos más sobresalientes en el municipio como lo es la Villa Iluminada.</p>
+</div>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Turismo Atlixco</h4>
+  </div>
+  </div>
+  </div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Eventos en Atlixco</h1>
+ </div>
+<div data-role="content" >
+ <div>
+ <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>HUEY ATLIXCAYOTL</h1>
+<div>
+<center><img src="imagenes/atlixcayotl.jpg" width="244" height="231" > </center></div>
+<div>
+<p>Atlixcáyotl es la máxima fiesta de Atlixco y la segunda más importante a nivel Nacional, expresión de convivencia donde se observa, se aprecia y se disfruta la forma de vestirse, hablar, cantar, bailar y la manera de agradecerle a la naturaleza por los beneficios obtenidos de ella por parte de los participantes.</p>
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>VILLA ILUMINADA</h1>
+<div align="center">
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/villa.jpg',1)"><img src="imagenes/villa2.jpg" width="253" height="204" id="Image12"></a></div>
+<p>La “Villa Iluminada” es un recorrido que resalta la belleza arquitectónica de este municipio, embelleciéndola con luz. Se presenta a finales de noviembre y hasta el 6 de enero.</p>
+<p>Durante más de cuarenta días las calles forman un circuito de luz y color, vestidas de figuras y escenas alusivas a la navidad, las tradiciones y la identidad de Atlixco.</p>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>DESFILE DE CALAVERAS</h1>
+<div>
+<center><img src="imagenes/calaveras.jpg" width="253" height="224" > </center>
+</div>
+El 02 de Noviembre la Ciudad de Atlixco se viste de calaveras para recorrer las principales calles en un festivo y colorido desfile que busca preservar y rescatar nuestras tradiciones populares.
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Fiesta de Reyes.</h1>
+<div align="center">
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/reyes2.jpg',1)"><img src="imagenes/reyes.jpg" width="253" height="204" id="Image10"></a></div>
+Es un majestuoso desfile de 5 km de largo en el que más de 15 carros alegóricos, comparsas y bandas locales recorren las calles principales de la Ciudad. Los reyes magos visitan Atlixco el 5 de Enero gracias a que los niños hacen un Festival de la Ilusión en el que les piden que no se olviden de los más necesitados. Con asistencia de más de 60 mil espectadores la Fiesta de Reyes es desde hace mas de 18 años, un evento que involucra a gran parte de la comunidad del Municipio. ¡¡¡Cada año nuevos carros alegóricos!!! VEN Y DISFRÚTALO
+</div>
+</div>
+</div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed" >
+ <h4>Turismo Atlixco</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Museos</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <h2><center>Museo de Arte Bonsai</center></h2>
+ <p>Ubicado en el Restaurante Las Bugambilias</p>
+<p>Libramiento Izúcar de Matamoros esq Blvd Niños Heroes</p>
+<p>Tel. 01(55) 5603.2798 / Fax 01(55) 5603.2863</p>
+<p>Costo $ 45.00 por persona</p>
+<p>Duración del recorrido 4 horas.</p>
+<p>La empresa Bazar de Plantas (Emigdio Trujillo S.), se inició en el arte del Bonsai en 1974, hace 40 años, importando Bonsai de Sarasota, Florida y de los Ángeles California. Al mismo tiempo se importaron Esquejes de los viveros de Monrovia y Olle Ollson, Ambos en California. Dichos Esquejes fueron especies que no había en México, tales como los Juniperos Procumens “Nana”, el Shimpaku, el San José y el Olmo, variedad “Catlin”, por mencionar s sólo algunos, que sirvieron para comenzar a crear nuestros propios Bonsai, pero ahora le estamos dando impulso a crear Bonsai con especies mexicanas como el Ahuehuete, el Palo Dulce, la Leucaena, etc.</p>
+<center><img src="imagenes/museo.jpg" width="253" height="224" > </center>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed"> 
+ <h4>Turismo Atlixco</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Gastronomia</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p><b>CECINA</b></p>
+ <center><img src="imagenes/cecina.jpg" width="253" height="224" > </center>
+ <p>Un platillo por el que después de probarlo querrás volver Atlixco, la tradicional cecina de Atlixco, elaborado por cecineros del municipio de manera artesanal este platillo es básico dentro de la cocina atlixquense, acompañado de sus guarniciones de queso, aguacate y nopales.</p>
+ <p><b>Barbacoa.</b></p>
+ <center><img src="imagenes/barbacoa.jpg" width="253" height="224" > </center>
+<p>La carne de borrego hecha en barbacoa es uno de los estilos de popularidad en el centro del país. Elaborada dentro de la tierra con hojas de maguey alcanza su mejor punto en sabor; lo puedes preparar en taco o simplemente con una rica salsa y aguacate. No olvides el consomé que se produce al cocinar la barbacoa.</p>
+<p><b>Chiles en nogada</b></p>
+<center><img src="imagenes/chiles.jpg" width="253" height="224" > </center>
+<p>Representativo del estado de Puebla, tiene su origen en los tiempos de Independencia en homenaje a Agustín de Iturbide. Los colores de la bandera se aprecian con armonía y perfección en este manjar por los meses de julio y agosto, ya que sus ingredientes se logran en esta temporada.<p>
+<p><b>Moloes</b></p>
+<p><b>Mole poblano</b></p>
+<center><img src="imagenes/poblano.jpg" width="253" height="224" > </center>
+<p>Delicioso mole dulce representativo de Puebla, está hecho a base de varios chiles y condimentos, agregando una caricia de chocolate. Su consistencia espesa se acompaña comúnmente de una pieza de guajolote o pollo y se agrada a la vista decorándolo con ajonjolí tostado</p>
+<p><b>Mole verde</b></p>
+<center><img src="imagenes/verde.jpg" width="253" height="224" > </center>
+<p>Platillo caldoso hecho con tomate, chile serrano y condimentos; se acompaña de carne de res y calabazas que al consumirse caliente le otorgan al paladar un sabor típico de México. Es conocido en nuestra región por prepararse de generación en generación desde hace mucho tiempo atrás.</p>
+<p><b>Dulces típicos </b></p>
+<p><b>Cacahuate garapiñado</b></p>
+<center><img src="imagenes/cacahuate.jpg" width="253" height="224" > </center>
+<p>Se cubren de azúcar derretida una vez que al cacahuate se le ha retirado la cáscara, por lo que tienen un sabor dulce en comparación al estado natural del fruto. La bolsita de esta originalidad es una de las favoritas dentro de la confitería artesanal.</p>
+<p><b>Nieves</b></p>
+<center><img src="imagenes/nieve.jpg" width="253" height="224" > </center>
+<p>Las nieves de la ciudad se conocen por la frescura con la que son preparadas, así como por sus distinguidos colores y sabores que se armonizan con el clima de Atlixco para ofrecer una grata propuesta de sobremesa a sus degustadores, las más conocidas son las de limón, guayaba, maracuyá, guanábana, mango, entre otras.</p>
+<p><b>Helado</b></p>
+<center><img src="imagenes/helado.jpg" width="253" height="224" > </center>
+<p>Apreciado por chicos y grandes, este postre frío y cremoso cuenta con una gran variedad de sabores, donde los más populares son: chocolate, vainilla, fresa, napolitano, pistache, piñón y nuez; sin embargo, las heladerías de la ciudad innovan continuamente con los ingredientes del producto para ofrecer calidad y encanto al consumidor.</p>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>Turismo Atlixco</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Atlixco Pueblo Magico</h1>
+ </div>
+ <div data-role="content" >
+ <div>
+ <p>En el marco de  la inauguración de la Feria Nacional de los Pueblos Mágicos 2015, celebrada en la ciudad de Puebla, Atlixco recibió la denominación como “Pueblo Mágico”, lo cual contribuye a revalorar a un conjunto de poblaciones del país que siempre han estado en el imaginario colectivo de la nación en su conjunto y que representan alternativas frescas y diferentes para los visitantes nacionales y extranjeros.</p>
+ <p>El secretario de Turismo a nivel federal, Enrique de la Madrid Cordero, mencionó que de las poco más de 180 solicitudes para obtener esta denominación, únicamente 28 fueron las que cumplieron con todos los lineamientos y finalmente obtuvieron esta distinción. Invitó a los “Pueblos Mágicos” a hacer un esfuerzo para conservar este título, el cual se evalúa anualmente: “cuidemos la marca, cuidemos los destinos en beneficio de sus localidades y su gente”.</p>
+ <div align="center">
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/atlixco2.jpg',1)"><img src="imagenes/atlixco1.jpg" width="293" height="172" id="Image18"></a></div>
+</div>
+ 
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>Turismo Atlixco</h4>
+ </div>
+ </div>
+ </div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>ubicacion</h1>
+ </div>
+ <div data-role="content">
+ <div>
+<p><b>ubicacion</b></p>
+<center><img src="imagenes/ubicacion.jpg" width="253" height="224" > </center>
+</div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>Turismo Atlixco</h4>
+ </div>
+ </div>
+ </div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Sitio Oficial de turismo</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <iframe src="http://turismoatlixco.com/" style="width:90%;height:60%px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+</div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>Turismo Atlixco</h4>
+ </div>
+ </div>
+ </div>
+</body>
+ </html>
+
